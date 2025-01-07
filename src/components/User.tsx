@@ -1,11 +1,10 @@
 type UserProps = {
-    name: string;
-    age: number;
-    isEmployee: boolean;
-}
+  name: string;
+  age: number;
+  isEmployee: boolean;
+};
 
-
-const User = ({ name, age, isEmployee }: UserProps) => {
+const User: React.FC<UserProps> = ({ name, age, isEmployee }) => {
   return (
     <div>
       <h2>{name}</h2>
